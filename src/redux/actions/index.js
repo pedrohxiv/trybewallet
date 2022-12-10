@@ -1,6 +1,7 @@
 export const LOGIN = 'LOGIN';
 export const REQUEST_SUCCESSFUL = 'REQUEST_SUCCESSFUL';
-export const EXPENSES_VALUES = 'EXPENSES_VALUES';
+export const ADD_EXPENSES_VALUES = 'ADD_EXPENSES_VALUES';
+export const DELETE_EXPENSES_VALUES = 'DELETE_EXPENSES_VALUES';
 
 export const login = (value) => ({
   type: LOGIN,
@@ -24,6 +25,11 @@ export const fetchCurrencies = () => async (dispatch) => {
 };
 
 export const addExpenses = (values) => ({
-  type: EXPENSES_VALUES,
+  type: ADD_EXPENSES_VALUES,
   payload: { ...values },
+});
+
+export const removeExpense = (expenses) => ({
+  type: DELETE_EXPENSES_VALUES,
+  payload: expenses,
 });
