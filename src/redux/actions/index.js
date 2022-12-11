@@ -2,6 +2,8 @@ export const LOGIN = 'LOGIN';
 export const REQUEST_SUCCESSFUL = 'REQUEST_SUCCESSFUL';
 export const ADD_EXPENSES_VALUES = 'ADD_EXPENSES_VALUES';
 export const DELETE_EXPENSES_VALUES = 'DELETE_EXPENSES_VALUES';
+export const SET_EDITOR_TRUE = 'SET_EDITOR_TRUE';
+export const EDIT_EXPENSE_VALUES = 'EDIT_EXPENSE_VALUES';
 
 export const login = (value) => ({
   type: LOGIN,
@@ -32,4 +34,14 @@ export const addExpenses = (values) => ({
 export const removeExpense = (expenses) => ({
   type: DELETE_EXPENSES_VALUES,
   payload: expenses,
+});
+
+export const setEditorTrue = (id) => ({
+  type: SET_EDITOR_TRUE,
+  payload: id,
+});
+
+export const editExpense = (expense) => ({
+  type: EDIT_EXPENSE_VALUES,
+  payload: expense,
 });

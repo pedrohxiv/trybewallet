@@ -1,6 +1,8 @@
 import {
   ADD_EXPENSES_VALUES,
   DELETE_EXPENSES_VALUES,
+  EDIT_EXPENSE_VALUES,
+  SET_EDITOR_TRUE,
   REQUEST_SUCCESSFUL,
 } from '../actions';
 
@@ -27,6 +29,18 @@ const walletReducer = (state = INITIAL_STATE, action) => {
     return {
       ...state,
       expenses: action.payload,
+    };
+  case SET_EDITOR_TRUE:
+    return {
+      ...state,
+      editor: true,
+      idToEdit: action.payload,
+    };
+  case EDIT_EXPENSE_VALUES:
+    return {
+      ...state,
+      editor: false,
+      expenses: [...action.payload],
     };
   default:
     return state;
