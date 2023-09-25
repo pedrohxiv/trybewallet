@@ -44,4 +44,4 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ---
 
-**Nota:** Este projeto é uma oportunidade para demonstrar suas habilidades em gerenciamento de estado com Redux em aplicações React. Sinta-se à vontade para explorar e entre em contato se tiver alguma pergunta ou feedback!
+**Nota:** Este projeto é uma oportunidade para demonstrar minhas habilidades em gerenciamento de estado com Redux em aplicações React. Sinta-se à vontade para explorar e entre em contato se tiver alguma pergunta ou feedback!
